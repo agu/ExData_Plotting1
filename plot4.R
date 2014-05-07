@@ -16,7 +16,7 @@ with(subpower, {
        ylab = "Energy sub metering")
   lines(Sub_metering_2, x = DateTime, col = "red")
   lines(Sub_metering_3, x = DateTime, col = "blue")
-  legend("topright", lty = 1, col = c("black", "red", "blue"),
+  legend("topright", lty = 1, col = c("black", "red", "blue"), bty = "n",
          legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
   plot(Global_reactive_power, x = DateTime, type = "l", xlab = "datetime", 
        ylab = "Global_reactive_power")
